@@ -98,13 +98,14 @@ def normpdf(*args):
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     if getattr(sys, 'frozen', False): # frozen
-        base_path = os.path.dirname(os.path.realpath(sys.executable))
+        base_path = sys._MEIPASS
     else: # unfrozen
-        base_path = os.path.dirname(os.path.realpath(__file__))
+        base_path = os.path.dirname(os.path.abspath(__file__))
 
     return os.path.join(base_path, relative_path)
     
 APP_NAME = 'Isotope Distribution Calculator'
+
 APP_ICON = resource_path('Atom.ico')
 DRAW_ICON = resource_path('Bina-pencil-green.png')
 ANNOTATE_THRESHOLD = 2.0
