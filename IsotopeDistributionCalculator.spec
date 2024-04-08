@@ -5,7 +5,7 @@ a = Analysis(
     ['IsotopeDistributionCalculator.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('Atom.ico', '.'), ('Bina-pencil-green.png', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
