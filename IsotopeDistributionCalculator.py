@@ -459,7 +459,7 @@ class AppForm(QMainWindow):
                                             rotation='vertical', annotation_clip=False)
                     else:
                         self.axes.annotate('%.*f' % (digits, i), xy=(i,j),
-                                            xytext=(-4.0,20+digits*8.0),
+                                            xytext=(-4.0,-20.0+digits*8.0),
                                             textcoords='offset points',
                                             rotation='vertical', annotation_clip=False)
         
