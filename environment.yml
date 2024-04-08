@@ -1,0 +1,12 @@
+name: idc
+channels:
+    - conda-forge
+dependencies:
+    - setuptools
+    - lxml>=4.0
+    - numpy>=1.14
+    - pyside6
+    - matplotlib-base>=2.2
+    - pyyaml
+    - molmass>=2023.8.30
+    - libblas=*=*openblas  # to remove mkl
